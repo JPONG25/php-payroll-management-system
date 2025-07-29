@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "setup": "npm install && echo 'Setup complete! Run npm run dev to start the application.'",
+    "dev": "PORT=3000 next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "setup-production": "npm install && npm run build && echo 'Production build complete! Run npm start to launch.'",
+    "check-system": "node --version && npm --version && echo 'System requirements check complete.'",
+    "reset": "rm -rf node_modules package-lock.json .next && npm install && echo 'System reset complete.'",
+    "help": "echo 'Available commands: setup, dev, build, start, lint, setup-production, check-system, reset'"
+  }
+}
